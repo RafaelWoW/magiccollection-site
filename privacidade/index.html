@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Política de Privacidade do aplicativo MagicCollection."
+  >
+  <title>Política de Privacidade — MagicCollection</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">MagicCollection</a>
+
+      <nav aria-label="Navegação principal">
+        <a href="./">Privacidade</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="policy">
+    <h1>Política de Privacidade — MagicCollection</h1>
+
+    <p><strong>Última atualização:</strong> 19 de agosto de 2026</p>
+
+    <p>
+      Esta Política de Privacidade descreve como o aplicativo Android
+      <strong>MagicCollection</strong>, desenvolvido e disponibilizado pela
+      <strong>RBCorp</strong>, trata informações durante o uso do aplicativo.
+    </p>
+
+    <p>
+      Contato para assuntos relacionados à privacidade:
+      <a href="mailto:privacidade@magiccollection.com.br">
+        <strong>privacidade@magiccollection.com.br</strong>
+      </a>
+    </p>
+
+    <h2>1. Visão geral</h2>
+
+    <p>
+      O MagicCollection é um aplicativo para consulta e organização de cartas
+      de Magic: The Gathering.
+    </p>
+
+    <p>
+      Na versão atualmente descrita por esta política, o MagicCollection não
+      possui sistema próprio de criação de conta, login, perfil remoto ou
+      sincronização com servidores da RBCorp.
+    </p>
+
+    <p>
+      A maior parte dos dados relacionados à coleção, preços e alertas é
+      mantida localmente no dispositivo do usuário.
+    </p>
+
+    <p>
+      Algumas funcionalidades necessitam de acesso à internet e utilizam
+      serviços externos, conforme explicado abaixo.
+    </p>
+
+    <h2>2. Informações enviadas à Scryfall</h2>
+
+    <p>
+      O MagicCollection utiliza a Scryfall como fonte externa de informações
+      sobre cartas, impressões, imagens e preços.
+    </p>
+
+    <p>
+      Quando o usuário realiza uma pesquisa, o texto informado é transformado
+      em uma consulta e enviado à API da Scryfall para localizar as cartas
+      correspondentes.
+    </p>
+
+    <p>
+      O aplicativo também pode enviar identificadores públicos de cartas ou
+      impressões da Scryfall para:
+    </p>
+
+    <ul>
+      <li>carregar detalhes de uma carta;</li>
+      <li>consultar impressões;</li>
+      <li>obter preços atualizados;</li>
+      <li>atualizar informações relacionadas a alertas de preço.</li>
+    </ul>
+
+    <p>
+      Essas transmissões são necessárias para fornecer as funcionalidades
+      solicitadas pelo usuário.
+    </p>
+
+    <p>
+      A RBCorp não controla as práticas internas de retenção de logs ou outros
+      dados operacionais da Scryfall. O tratamento realizado pela Scryfall
+      também está sujeito às políticas e práticas próprias desse serviço.
+    </p>
+
+    <h2>3. Imagens de cartas</h2>
+
+    <p>
+      As imagens das cartas são carregadas pela internet a partir de endereços
+      fornecidos pelos dados da Scryfall.
+    </p>
+
+    <p>
+      A solicitação de uma imagem pode permitir que o servidor responsável
+      pelo arquivo saiba qual recurso de imagem foi solicitado.
+    </p>
+
+    <p>
+      Quando uma coleção é importada a partir de arquivo JSON, o
+      MagicCollection somente preserva URLs de imagem que utilizem HTTPS e
+      pertençam ao domínio <code>scryfall.io</code> ou a seus subdomínios.
+    </p>
+
+    <h2>4. Dados armazenados no dispositivo</h2>
+
+    <p>
+      O MagicCollection utiliza um banco de dados local no dispositivo.
+    </p>
+
+    <p>
+      Entre as informações que podem ser armazenadas localmente estão:
+    </p>
+
+    <ul>
+      <li>cartas adicionadas à coleção;</li>
+      <li>identificador da impressão da carta;</li>
+      <li>nome, edição e número de colecionador;</li>
+      <li>quantidades nonfoil, foil e etched;</li>
+      <li>estado da lista de desejos;</li>
+      <li>informações sobre acabamentos disponíveis;</li>
+      <li>URLs de imagens;</li>
+      <li>preços recebidos da Scryfall;</li>
+      <li>histórico local de preços;</li>
+      <li>configurações de alertas de preço;</li>
+      <li>eventos gerados por alertas;</li>
+      <li>
+        informações técnicas necessárias ao controle de notificações.
+      </li>
+    </ul>
+
+    <p>
+      Esses dados não são atualmente sincronizados com um servidor próprio da
+      RBCorp.
+    </p>
+
+    <h2>5. Alertas de preço e processamento em segundo plano</h2>
+
+    <p>
+      O MagicCollection permite configurar alertas de preço.
+    </p>
+
+    <p>
+      Quando essa funcionalidade está habilitada, o Android pode executar
+      trabalhos em segundo plano quando houver conexão de rede disponível.
+    </p>
+
+    <p>
+      Esses trabalhos podem consultar a Scryfall usando identificadores de
+      cartas para obter preços atuais.
+    </p>
+
+    <p>Os resultados podem ser utilizados para:</p>
+
+    <ul>
+      <li>atualizar preços armazenados localmente;</li>
+      <li>registrar histórico de preços;</li>
+      <li>verificar se as condições de um alerta foram atingidas;</li>
+      <li>criar eventos de alerta;</li>
+      <li>exibir notificações locais no dispositivo.</li>
+    </ul>
+
+    <p>
+      O intervalo configurado para o trabalho periódico é de seis horas, mas
+      o horário efetivo de execução é administrado pelo Android e não é
+      garantido como exatamente a cada seis horas.
+    </p>
+
+    <h2>6. Notificações</h2>
+
+    <p>
+      Os alertas de preço podem gerar notificações locais no dispositivo.
+    </p>
+
+    <p>
+      Em versões do Android que exigem permissão para notificações, o usuário
+      poderá permitir ou negar essa autorização.
+    </p>
+
+    <p>
+      O MagicCollection não utiliza atualmente um serviço próprio de push
+      remoto para enviar essas notificações.
+    </p>
+
+    <h2>7. Importação e exportação</h2>
+
+    <p>
+      O MagicCollection permite importar e exportar manualmente os dados da
+      coleção em formato JSON.
+    </p>
+
+    <p>O arquivo pode incluir informações como:</p>
+
+    <ul>
+      <li>identificadores das cartas;</li>
+      <li>nomes;</li>
+      <li>edições;</li>
+      <li>números de colecionador;</li>
+      <li>quantidades;</li>
+      <li>acabamentos;</li>
+      <li>lista de desejos;</li>
+      <li>URL da imagem;</li>
+      <li>informações temporais relacionadas à coleção.</li>
+    </ul>
+
+    <p>
+      O usuário escolhe onde o arquivo será aberto ou salvo utilizando o
+      seletor de documentos fornecido pelo Android.
+    </p>
+
+    <p>
+      A RBCorp não recebe automaticamente esses arquivos.
+    </p>
+
+    <p>
+      Dependendo do provedor escolhido pelo próprio usuário no seletor de
+      arquivos, o arquivo poderá ser armazenado em um serviço externo de
+      armazenamento ou nuvem escolhido pelo usuário.
+    </p>
+
+    <h2>8. Backup e transferência entre dispositivos</h2>
+
+    <p>
+      O MagicCollection possui regras específicas de backup do Android.
+    </p>
+
+    <p>
+      Os dados persistentes do aplicativo são excluídos do backup em nuvem
+      configurado pelo aplicativo.
+    </p>
+
+    <p>
+      Em versões compatíveis do Android, o banco de dados pode participar de
+      uma transferência direta entre dispositivos administrada pelo próprio
+      sistema Android.
+    </p>
+
+    <p>
+      A importação e exportação manual em JSON é um mecanismo separado dessa
+      transferência.
+    </p>
+
+    <h2>9. Retenção e exclusão dos dados locais</h2>
+
+    <p>
+      Os dados locais permanecem armazenados no dispositivo enquanto forem
+      necessários às funcionalidades correspondentes ou enquanto permanecerem
+      no banco de dados do aplicativo.
+    </p>
+
+    <p>
+      Quando uma carta fica com todas as quantidades iguais a zero e também é
+      removida da lista de desejos, o registro principal dessa carta na coleção
+      é removido.
+    </p>
+
+    <p>
+      A exclusão de uma carta da coleção não significa necessariamente a
+      exclusão automática de outros registros relacionados que possam existir,
+      como histórico de preços ou eventos de alertas.
+    </p>
+
+    <p>
+      Alertas de preço podem ser excluídos individualmente pelo usuário pelas
+      funcionalidades disponibilizadas no aplicativo.
+    </p>
+
+    <p>
+      No estado atual do aplicativo, não existe uma função única que apague
+      seletivamente todo o histórico de preços e todos os eventos de alertas
+      preservando os demais dados.
+    </p>
+
+    <p>
+      O usuário também pode remover os dados locais utilizando os mecanismos
+      do próprio Android, como limpar os dados do aplicativo ou desinstalá-lo.
+    </p>
+
+    <p>
+      O MagicCollection não possui atualmente conta de usuário ou banco de
+      dados remoto próprio no qual a RBCorp mantenha uma cópia da coleção do
+      usuário.
+    </p>
+
+    <h2>10. Segurança</h2>
+
+    <p>
+      As comunicações de rede funcionais atualmente utilizadas pelo
+      MagicCollection são realizadas por HTTPS.
+    </p>
+
+    <p>
+      O aplicativo também utiliza a configuração de segurança de rede do
+      Android para bloquear tráfego HTTP não criptografado.
+    </p>
+
+    <p>
+      A RBCorp procura limitar o tratamento de informações ao necessário para
+      disponibilizar as funcionalidades do aplicativo.
+    </p>
+
+    <p>
+      Nenhum método de transmissão ou armazenamento eletrônico pode garantir
+      segurança absoluta, mas são adotadas medidas compatíveis com a
+      arquitetura atual do aplicativo.
+    </p>
+
+    <h2>11. Analytics, publicidade e rastreamento</h2>
+
+    <p>
+      Na versão atualmente descrita por esta política, o MagicCollection não
+      integra SDKs próprios de:
+    </p>
+
+    <ul>
+      <li>analytics;</li>
+      <li>publicidade;</li>
+      <li>attribution;</li>
+      <li>crash reporting;</li>
+      <li>rastreamento comportamental.</li>
+    </ul>
+
+    <p>
+      Essa declaração deverá ser atualizada caso alguma dessas funcionalidades
+      seja incorporada futuramente.
+    </p>
+
+    <h2>12. Informações que o aplicativo não solicita atualmente</h2>
+
+    <p>
+      Na versão atualmente descrita por esta política, o MagicCollection não
+      solicita funcionalmente:
+    </p>
+
+    <ul>
+      <li>nome ou e-mail para criação de conta;</li>
+      <li>telefone;</li>
+      <li>contatos do dispositivo;</li>
+      <li>localização;</li>
+      <li>acesso à câmera;</li>
+      <li>gravação de áudio;</li>
+      <li>acesso amplo ao armazenamento do dispositivo.</li>
+    </ul>
+
+    <p>
+      A importação e a exportação utilizam o seletor de documentos do Android
+      e não uma permissão ampla de acesso aos arquivos.
+    </p>
+
+    <h2>13. Serviços de terceiros</h2>
+
+    <p>
+      O principal serviço externo atualmente utilizado pelo MagicCollection é
+      a Scryfall.
+    </p>
+
+    <p>
+      A Scryfall fornece dados de cartas, impressões, preços e imagens
+      utilizados pelas funcionalidades do aplicativo.
+    </p>
+
+    <p>
+      Ao utilizar funcionalidades que dependem desse serviço, determinadas
+      requisições são transmitidas diretamente do dispositivo para a
+      infraestrutura da Scryfall.
+    </p>
+
+    <p>
+      A RBCorp não controla a infraestrutura, políticas de retenção ou demais
+      práticas internas da Scryfall.
+    </p>
+
+    <h2>14. Alterações futuras no MagicCollection</h2>
+
+    <p>
+      O MagicCollection poderá receber novas funcionalidades no futuro.
+    </p>
+
+    <p>
+      Funcionalidades futuras como login, sincronização, scanner de cartas,
+      analytics, publicidade, inteligência artificial, novos fornecedores de
+      dados ou monetização não fazem parte automaticamente das práticas
+      descritas nesta versão da política.
+    </p>
+
+    <p>
+      Caso alguma alteração mude de forma relevante o tratamento de dados,
+      esta Política de Privacidade e as declarações correspondentes no Google
+      Play deverão ser atualizadas antes da disponibilização da funcionalidade
+      aos usuários.
+    </p>
+
+    <h2>15. Alterações desta Política de Privacidade</h2>
+
+    <p>
+      Esta Política de Privacidade poderá ser atualizada para refletir mudanças
+      no aplicativo, nos serviços utilizados ou em requisitos aplicáveis.
+    </p>
+
+    <p>
+      A data da última atualização será indicada no início deste documento.
+    </p>
+
+    <h2>16. Contato</h2>
+
+    <p><strong>RBCorp</strong></p>
+
+    <p>
+      <strong>E-mail:</strong>
+      <a href="mailto:privacidade@magiccollection.com.br">
+        privacidade@magiccollection.com.br
+      </a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>MagicCollection — RBCorp</p>
+  </footer>
+</body>
+</html>
